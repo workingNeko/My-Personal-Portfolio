@@ -887,6 +887,94 @@ footer::before {
     .projects-grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+    
+    /* Personal Info - Adjust layout */
+    .personal-info li {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .personal-info strong {
+        min-width: auto;
+        font-size: 0.95rem;
+    }
+    
+    .personal-info span {
+        text-align: left;
+        font-size: 0.9rem;
+    }
+    
+    /* Tech Interests - Adjust grid */
+    .tech-interests {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 0.75rem;
+    }
+    
+    .tech {
+        padding: 1rem;
+        aspect-ratio: 1;
+    }
+    
+    .tech i {
+        font-size: 1.5rem;
+    }
+    
+    .tech span {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* About Section Padding */
+    .section-content {
+        padding: 2rem;
+    }
+    
+    /* Personal Info - Stack items */
+    .personal-info li {
+        flex-direction: column;
+        gap: 0.25rem;
+        padding: 0.5rem 0;
+    }
+    
+    .personal-info strong {
+        min-width: auto;
+        font-size: 0.9rem;
+    }
+    
+    .personal-info span {
+        text-align: left;
+        font-size: 0.85rem;
+    }
+    
+    /* Tech Interests - 2 columns */
+    .tech-interests {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+    
+    .tech {
+        padding: 1.25rem;
+        aspect-ratio: 1;
+    }
+    
+    .tech i {
+        font-size: 1.75rem;
+    }
+    
+    .tech span {
+        font-size: 0.9rem;
+    }
+    
+    /* About Columns */
+    .about-column {
+        padding: 1.5rem;
+    }
+    
+    .about-column h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -905,6 +993,104 @@ footer::before {
     
     .tech {
         padding: 1rem;
+    }
+    
+    /* Personal Info - Mobile Optimized */
+    .personal-info li {
+        flex-direction: column;
+        gap: 0.2rem;
+        padding: 0.4rem 0;
+    }
+    
+    .personal-info strong {
+        font-size: 0.85rem;
+    }
+    
+    .personal-info span {
+        font-size: 0.8rem;
+    }
+    
+    /* Tech Interests - Smaller items */
+    .tech-interests {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .tech {
+        padding: 0.75rem;
+    }
+    
+    .tech i {
+        font-size: 1.25rem;
+    }
+    
+    .tech span {
+        font-size: 0.75rem;
+    }
+    
+    /* Reduce gap in about row */
+    .about-row {
+        gap: 1.5rem;
+    }
+    
+    .about-column {
+        padding: 1.25rem;
+    }
+    
+    .about-column h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 360px) {
+    .tech-interests {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .tech {
+        padding: 0.5rem;
+        aspect-ratio: 1;
+    }
+    
+    .tech i {
+        font-size: 1rem;
+    }
+    
+    .tech span {
+        font-size: 0.7rem;
+    }
+    
+    .personal-info li {
+        padding: 0.3rem 0;
+    }
+    
+    .personal-info strong {
+        font-size: 0.8rem;
+    }
+    
+    .personal-info span {
+        font-size: 0.75rem;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    .tech-interests {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .tech {
+        padding: 0.75rem;
+    }
+}
+
+/* Tablet Landscape */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .tech-interests {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
