@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Levnicolayevich Adlawan | IT & Web Development Student</title>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header-container">
+    <header>
+        <div class="logo">
+            <a href="#home">Levnicolayevich</a>
+        </div>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#education" onclick="closeMenu()">Education</a></li>
+                <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+</div>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <img src="img/profile.png" alt="Levnicolayevich Adlawan">
+        <h1>Levnicolayevich Adlawan</h1>
+        <h2>IT & Web Development Student</h2>
+
+        <div class="social-links">
+            <a href="https://github.com/workingNeko" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/levnicolayevich-adlawan-4459613a5/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <div class="section-content">
+        <h2>About Me</h2>
+        <p>
+           I am a third-year Information Technology student at Camarines Norte State College with hands-on experience in Data entry, WordPress, and Web Development. Throughout my academic journey, I have assisted individuals and small businesses by creating functional, user-friendly websites and ensuring accurate data management, combining technical skills with a focus on reliability and precision.
+           <br><br>
+
+            I am passionate about delivering solutions that are not only effective but also practical, helping clients and teams achieve their goals efficiently. I value clear communication, timely project delivery, and a growth mindset, always seeking opportunities to expand my knowledge and enhance my skill set.
+            <br><br>
+            I am eager to apply my technical expertise in real-world settings, collaborate with diverse teams, and contribute to projects that make a meaningful impact. Continuously learning and improving, I strive to turn every challenge into an opportunity for growth and innovation.
+            <br><br>
+            Thank you!
+        </p>
+
+        <div class="about-row">
+            <!-- Personal Information -->
+            <div class="about-column">
+                <h3>Personal Information</h3>
+                <ul class="personal-info">
+                    <li><strong>Full Name:</strong> Levnicolayevich Adlawan</li>
+                    <li><strong>Location:</strong> Daet, Camarines Norte, Philippines</li>
+                    <li><strong>Email:</strong> levnicolayevich.work@gmail.com</li>
+                    <li><strong>Phone:</strong> +63 991 563 8939</li>
+                    <li><strong>Title:</strong> IT & Web Development Student</li>
+                </ul>
+            </div>
+
+            <!-- Technical Interests -->
+            <div class="about-column">
+                <h3>Technical Interests</h3>
+                <div class="tech-interests">
+                    <div class="tech"><i class="fab fa-html5"></i><span>HTML</span></div>
+                    <div class="tech"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+                    <div class="tech"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+                    <div class="tech"><i class="fab fa-php"></i><span>PHP</span></div>
+                    <div class="tech"><i class="fas fa-robot"></i><span>Robotics</span></div>
+                    <div class="tech"><i class="fab fa-python"></i><span>Python</span></div>
+                    <div class="tech"><i class="fas fa-database"></i><span>Database</span></div>
+                    <div class="tech"><i class="fas fa-server"></i><span>Backend</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <div class="section-content">
+        <h2>Skills</h2>
+
+        <div class="skills-list">
+            <div class="skill">
+                <span>HTML & CSS</span>
+                <div class="progress-bar"><div class="progress" data-percent="78"></div></div>
+            </div>
+
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="progress-bar"><div class="progress" data-percent="72"></div></div>
+            </div>
+
+            <div class="skill">
+                <span>PHP</span>
+                <div class="progress-bar"><div class="progress" data-percent="68"></div></div>
+            </div>
+
+            <div class="skill">
+                <span>WordPress</span>
+                <div class="progress-bar"><div class="progress" data-percent="74"></div></div>
+            </div>
+
+            <div class="skill">
+                <span>Microsoft Excel</span>
+                <div class="progress-bar"><div class="progress" data-percent="75"></div></div>
+            </div>
+
+            <div class="skill">
+                <span>Visual Basic</span>
+                <div class="progress-bar"><div class="progress" data-percent="62"></div></div>
+            </div>
+            
+            <div class="skill">
+                <span>Python</span>
+                <div class="progress-bar"><div class="progress" data-percent="65"></div></div>
+            </div>
+            
+            <div class="skill">
+                <span>Database Management</span>
+                <div class="progress-bar"><div class="progress" data-percent="70"></div></div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+    <div class="section-content">
+        <h2>Education</h2>
+
+        <div class="timeline-item">
+            <h4>Bachelor of Science in Information Technology</h4>
+            <span>Camarines Norte State College | 2023 – Present</span>
+            <p>
+                Currently a 3rd-year IT student with a GWA of 1.6489, focusing on system
+                development, web technologies, databases, and networking fundamentals.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h4>Networking Basics Certification</h4>
+            
+            <!-- Clickable Badge -->
+            <a href="https://www.credly.com/earner/earned/badge/2169f444-b08a-4100-b6ca-41864652a272" target="_blank">
+                <img src="img/BadgenoBG.png" alt="Networking Badge" class="badge">
+            </a>
+
+            <span>Cisco | Issued November 23, 2025</span>
+            <p>
+                Cisco verifies the earner of this badge successfully completed the Networking Basics course and achieved this student-level credential. Earner has knowledge of networks, devices, cabling, IP addressing, and practiced building a home wireless network. Participated in 13 Cisco Packet Tracer activities.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <div class="section-content">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Bamboo Grill Unlimited Rice Information System</h3>
+                <p>
+                    Designed and developed a business information system focused on organized
+                    data handling and usability for a small local food business.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>LeafinThings Aquaponics System</h3>
+                <p>
+                    Group project involving an IoT-based aquaponics system aimed at sustainability.
+                    Awarded “Most Technical Implementation Award” at the 2nd IoT Expo.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Integrated Fisherfolk Management Information System</h3>
+                <p>
+                    Developed a centralized system for managing fisherfolk records, registrations,
+                    and structured data workflows for community or local government use.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <div class="section-content">
+        <h2>Contact</h2>
+
+        <p>
+            📍 Purok 4 Bayview Subd., Bagasbas, Daet, Camarines Norte, PH 4600<br>
+            📧 levnicolayevich.work@gmail.com<br>
+            📞 (+63) 991 563 8939
+        </p>
+
+        <a href="mailto:levnicolayevich.work@gmail.com">
+            <button class="contact-button">
+                Send Email <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <a href="#home" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+    <div class="social-links">
+        <a href="https://github.com/workingNeko" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/levnicolayevich-adlawan-4459613a5/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
