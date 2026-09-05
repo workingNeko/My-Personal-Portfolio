@@ -686,6 +686,9 @@ nav#nav ul li a:active {
 .badge {
     width: 250px;
     height: 250px;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
     border-radius: 20px;
     margin: 1.5rem 0;
     box-shadow: var(--shadow-lg);
